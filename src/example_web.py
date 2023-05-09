@@ -207,8 +207,8 @@ class ProfitSimulation:
             else:
                 h_or_a = 1
             if h_or_a == row['correct_pointspread_bet']:
-                return False
-            return True
+                return True
+            return False
         elif type == 'gamewinner':
             if row[algorithm] >= 0:
                 h_or_a = 1
